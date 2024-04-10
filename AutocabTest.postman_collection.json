@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "3a2e2b89-9a24-4b5b-bea0-c300bedb40fb",
+		"name": "AutocabTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21346785"
+	},
+	"item": [
+		{
+			"name": "GetAllPeople",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/tuits",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"tuits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllRecords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/tuits",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"tuits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPerson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/person/1090503222",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"person",
+						"1090503222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchPerson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/person/1090503222",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"person",
+						"1090503222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecordsFromPerson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/person/1090503222",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"person",
+						"1090503222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"Hello World\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/tuits",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"tuits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateRecord",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \n    \"eventType\" : \"S\",\n    \"person_record\" : 1090503219\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/record",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePerson",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dniType\": \"TI\",\n    \"firstName\" : \"Ender2\",\n    \"lastName\" : \"Ortega2\",\n    \"phone\" : \"3133342340\",\n    \"gender\" : \"F\",\n    \"email\": \"enderortega1@outlook.com\",\n    \"photo\" : \"ww3.myphoto.com/images/123.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/person/1090503218",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"person",
+						"1090503218"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/person/1090503218",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"person",
+						"1090503218"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
